@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ventana Del Pueblo | Restaurante y Tradición Local</title>
+
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="imagenes/logo.jpeg" alt="La Ventana Del Pueblo">
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <div class="accesibilidad">
+
+                <button id="themeBtn" class="access-btn">
+                    🌙
+                </button>
+
+                <button id="fontPlus" class="access-btn">
+                    A+
+                </button>
+
+                <button id="fontMinus" class="access-btn">
+                    A-
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Si es del pueblo, es bueno!</h1>
+
+            <p>
+                Bienvenido a La Ventana Del Pueblo, un espacio donde la tradición,
+                la buena comida y el ambiente familiar se unen para crear momentos inolvidables.
+            </p>
+
+            <a href="#menu" class="btn">Ver Menú</a>
+        </div>
+
+
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="about">
+
+        <div class="container">
+
+            <h2>Sobre Nosotros</h2>
+
+            <p>
+                En La Ventana Del Pueblo nos apasiona ofrecer una experiencia auténtica,
+                rescatando los sabores tradicionales y brindando una atención cercana.
+                Nuestro objetivo es que cada visitante se sienta como en casa mientras
+                disfruta de platillos preparados con dedicación y calidad.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- MENÚ -->
+    <section id="menu" class="menu-section">
+
+        <div class="container">
+
+            <h2>Nuestro Menú</h2>
+
+            <!-- BOTONES -->
+            <div class="menu-categorias">
+
+                <button class="categoria-btn active" onclick="mostrarMenu('sopas')"> Sopas</button>
+
+                <button class="categoria-btn" onclick="mostrarMenu('birria')"> Menú Birria</button>
+
+                <button class="categoria-btn" onclick="mostrarMenu('rapidas')"> Comidas Rápidas</button>
+
+                <button class="categoria-btn" onclick="mostrarMenu('batidos')"> Batidos</button>
+
+                <button class="categoria-btn" onclick="mostrarMenu('calientes')"> Bebidas Calientes</button>
+
+                <button class="categoria-btn" onclick="mostrarMenu('carnes')"> Carnes</button>
+
+                <button class="categoria-btn" onclick="mostrarMenu('pastas')"> Pastas</button>
+
+                <button class="categoria-btn" onclick="mostrarMenu('desayunos')"> Desayunos</button>
+
+                <button class="categoria-btn" onclick="mostrarMenu('platos-fuertes')"> Platos Fuertes</button>
+
+                <button class="categoria-btn" onclick="mostrarMenu('arroces')"> Arroces</button>
+
+            </div>
+
+            <!-- SOPAS -->
+            <div id="sopas" class="menu-content active-menu">
+
+                <h2 class="subcategoria-titulo"> Sopas</h2>
+
+                <div class="menu-grid">
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/mariscoscaribeno.JEPG.png" alt="Sopa de mariscos caribeña">
+                        <div class="food-info">
+                            <h3>Sopa de Mariscos Caribeña</h3>
+                            <p>Una explosión de sabor con mariscos frescos, leche de coco y especias caribeñas.</p>
+                            <span class="price">₡5,600</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/mariscosLeche.jepg.png" alt="Sopa de mariscos en leche">
+                        <div class="food-info">
+                            <h3>Sopa de Mariscos en Leche</h3>
+                            <p>Cremosa sopa con mariscos seleccionados en una base suave de leche y especias.</p>
+                            <span class="price">₡5,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <img src="imagenes/sopaAgua.jpeg" alt="Sopa de mariscos caribeña">
+                        <div class="food-info">
+                            <h3>Sopa de Mariscos en Agua</h3>
+                            <p>Caldo ligero con mariscos frescos, ideal para quienes buscan algo más suave.</p>
+                            <span class="price">₡4,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Sopa Mexicana</h3>
+                            <p>Tradicional sopa con verduras, especias y un toque picante característico.</p>
+                            <span class="price">₡4,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Sopa de Vegetales</h3>
+                            <p>Sopa ligera y saludable con vegetales frescos de temporada.</p>
+                            <span class="price">₡3,500</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Sopa Ranchera</h3>
+                            <p>Sopa tradicional con sabor casero, ideal para cualquier momento del día.</p>
+                            <span class="price">₡3,800</span>
+                        </div>
+                    </article>
+
+                </div>
+
+
+            </div>
+            <!-- BIRRIA-->
+            <div id="birria" class="menu-content">
+
+                <h2 class="subcategoria-titulo"> Birria</h2>
+
+                <div class="menu-grid">
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/tacosBirria.jepg.png" alt="Tacos de birria">
+                        <div class="food-info">
+                            <h3>Tacos de Birria</h3>
+                            <p>Tortillas doradas rellenas de carne de birria jugosa, acompañadas de consomé caliente.
+                            </p>
+                            <span class="price">₡4,800</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/quesabirria.jepn.png" alt="Quesadilla de birria">
+                        <div class="food-info">
+                            <h3>Quesadilla de Birria</h3>
+                            <p>Tortilla rellena de queso derretido y birria suave, dorada al punto perfecto.</p>
+                            <span class="price">₡4,800</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/papabirria.jepg.png" alt="Papa nachos de birria">
+                        <div class="food-info">
+                            <h3>Papa Nachos de Birria</h3>
+                            <p>Papas fritas con birria, queso fundido y toppings especiales.</p>
+                            <span class="price">₡4,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Empanadas de Birria</h3>
+                            <p>Empanadas crujientes rellenas de birria tradicional.</p>
+                            <span class="price">₡3,300</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Maruchán Birria</h3>
+                            <p>Sopa instantánea con birria y consomé especial del chef.</p>
+                            <span class="price">₡3,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Hamburguesa Birria</h3>
+                            <p>Hamburguesa jugosa con carne de birria y queso derretido.</p>
+                            <span class="price">₡5,200</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Surtida Birria de Carne</h3>
+                            <p>Plato grande para compartir con variedad de birria de carne.</p>
+                            <span class="price">₡18,000</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Surtida Birria Mixta</h3>
+                            <p>Selección mixta de birria ideal para compartir en familia.</p>
+                            <span class="price">₡15,500</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMIDAS RÁPIDAS -->
+            <div id="rapidas" class="menu-content">
+
+                <h2 class="subcategoria-titulo"> Comidas Rápidas</h2>
+
+                <div class="accordion">
+
+                    <!-- FAJITAS Y BURRITOS -->
+                    <button class="accordion-btn"> Fajitas y Burritos</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <!-- DESTACADA -->
+                            <article class="food-card">
+                                <img src="imagenes/fajPollo.jpeg" alt="Fajitas de pollo">
+                                <div class="food-info">
+                                    <h3>Fajitas de Pollo + Papas</h3>
+                                    <p>Pollo sazonado a la plancha acompañado de papas fritas crujientes.</p>
+                                    <span class="price">₡3,300</span>
+                                </div>
+                            </article>
+
+                            <!-- DESTACADA -->
+                            <article class="food-card">
+                                <img src="imagenes/fajPescado.jpeg" alt="Fajitas de pescado">
+                                <div class="food-info">
+                                    <h3>Fajitas de Pescado + Papas</h3>
+                                    <p>Pescado fresco dorado con especias y papas fritas.</p>
+                                    <span class="price">₡3,500</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Burrito de Carne + Papas</h3>
+                                    <p>Tortilla rellena de carne, vegetales frescos y papas.</p>
+                                    <span class="price">₡3,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Burrito de Pollo Crispy + Papas</h3>
+                                    <p>Pollo empanizado crujiente con salsa especial en tortilla suave.</p>
+                                    <span class="price">₡3,500</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- TACOS -->
+                    <button class="accordion-btn"> Tacos y Especialidades</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <!-- DESTACADA -->
+
+                            <!-- DESTACADA -->
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Taco de Alambre</h3>
+                                    <p>Carne salteada con vegetales y queso fundido.</p>
+                                    <span class="price">₡5,800</span>
+                                </div>
+                            </article>
+
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Taco con Papas</h3>
+                                    <p>Taco clásico acompañado de papas fritas doradas.</p>
+                                    <span class="price">₡2,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Chalupa</h3>
+                                    <p>Base crujiente con ingredientes frescos y salsas caseras.</p>
+                                    <span class="price">₡3,000</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ACOMPAÑAMIENTOS -->
+                    <button class="accordion-btn"> Acompañamientos</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <!-- DESTACADA -->
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Salchipapas</h3>
+                                    <p>Papas fritas con salchichas y salsas especiales del chef.</p>
+                                    <span class="price">₡3,000</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Orden de Yuca</h3>
+                                    <p>Yuca frita dorada y crujiente.</p>
+                                    <span class="price">₡1,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Orden de Papas</h3>
+                                    <p>Papas fritas (pequeña o grande según elección).</p>
+                                    <span class="price">₡1,500 - ₡3,000</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Orden de Patacones</h3>
+                                    <p>Patacones crujientes recién hechos.</p>
+                                    <span class="price">₡1,800</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- NACHOS -->
+                    <button class="accordion-btn"> Nachos</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <!-- DESTACADA -->
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Papa Nachos</h3>
+                                    <p>Papas con queso derretido y proteína a elección.</p>
+                                    <span class="price">₡3,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Patanachos</h3>
+                                    <p>Patacones con carne, queso y toppings especiales.</p>
+                                    <span class="price">₡3,600</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Papa Nachos de Camarón</h3>
+                                    <p>Papas con camarón, queso y salsas especiales.</p>
+                                    <span class="price">₡4,500</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- EMPANADAS -->
+                    <button class="accordion-btn"> Empanadas</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Empanada de Queso, Carne o Pollo</h3>
+                                    <p>Empanada tradicional recién frita.</p>
+                                    <span class="price">₡2,000</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Empanada Arreglada</h3>
+                                    <p>Empanada con acompañamientos especiales del chef.</p>
+                                    <span class="price">₡2,500</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- HAMBURGUESAS -->
+                    <button class="accordion-btn"> Hamburguesas</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <!-- DESTACADA -->
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Hamburguesa Especial</h3>
+                                    <p>Carne jugosa con queso, vegetales frescos y salsa de la casa.</p>
+                                    <span class="price">₡3,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Hamburguesa Sencilla</h3>
+                                    <p>Clásica hamburguesa con carne, pan suave y salsas básicas.</p>
+                                    <span class="price">₡3,000</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Hamburguesa Jalapeña</h3>
+                                    <p>Con jalapeños picantes y queso derretido.</p>
+                                    <span class="price">₡4,800</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- QUESADILLAS -->
+                    <button class="accordion-btn"> Quesadillas</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Quesadilla de Carne</h3>
+                                    <p>Queso derretido con carne sazonada en tortilla dorada.</p>
+                                    <span class="price">₡3,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Quesadilla de Pollo</h3>
+                                    <p>Pollo suave con queso fundido y tortilla crujiente.</p>
+                                    <span class="price">₡3,500</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="batidos" class="menu-content">
+
+                <h2 class="subcategoria-titulo"> Bebidas Naturales</h2>
+
+                <div class="menu-grid">
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/batidos.jepg.png" alt="Batido de Fresa">
+                        <div class="food-info">
+                            <h3>Batido de Fresa</h3>
+                            <p>Preparado con fresas frescas, de sabor dulce y refrescante.</p>
+                            <span class="price">Leche ₡1,500 | Agua ₡1,200</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/batidos.jepg.png" alt="Batido de Maracuyá">
+                        <div class="food-info">
+                            <h3>Batido de Maracuyá</h3>
+                            <p>Refrescante combinación tropical con el equilibrio perfecto entre dulce y ácido.</p>
+                            <span class="price">Leche ₡1,500 | Agua ₡1,200</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/batidos.jepg.png" alt="Batido de Piña">
+                        <div class="food-info">
+                            <h3>Batido de Piña</h3>
+                            <p>Elaborado con piña natural, ideal para refrescar cualquier comida.</p>
+                            <span class="price">Leche ₡1,500 | Agua ₡1,200</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Batido de Mora</h3>
+                            <p>Batido natural con mora seleccionada y un sabor intenso.</p>
+                            <span class="price">Leche ₡1,500 | Agua ₡1,200</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Batido de Papaya</h3>
+                            <p>Bebida suave y nutritiva preparada con fruta fresca.</p>
+                            <span class="price">Leche ₡1,500 | Agua ₡1,200</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!-- BEBIDAS CALIENTES -->
+            <div id="calientes" class="menu-content">
+
+                <h2 class="subcategoria-titulo"> Bebidas Calientes</h2>
+
+                <div class="menu-grid">
+
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Café Negro</h3>
+                            <p>Café tradicional recién preparado, intenso y aromático.</p>
+                            <span class="price">₡1,000</span>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Café con Leche</h3>
+                            <p>Mezcla suave de café con leche caliente y cremosa.</p>
+                            <span class="price">₡1,200</span>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Chocolate Caliente</h3>
+                            <p>Bebida dulce y cremosa ideal para cualquier momento del día.</p>
+                            <span class="price">₡1,500</span>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Té</h3>
+                            <p>Infusión caliente suave y natural, ideal para relajarse.</p>
+                            <span class="price">₡1,200</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <div id="carnes" class="menu-content">
+
+                <h2 class="subcategoria-titulo"> Carnes y Especialidades</h2>
+
+                <div class="accordion">
+
+                    <!-- POLLO -->
+                    <button class="accordion-btn"> Pollo</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <article class="food-card">
+                                <img src="imagenes/polloSalsa.jpeg" alt="Pollo en salsa de hongos">
+                                <div class="food-info">
+                                    <h3>Pollo en Salsa de Hongos</h3>
+                                    <p>Pechuga de pollo bañada en una cremosa salsa de hongos.</p>
+                                    <span class="price">₡4,500</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <img src="imagenes/filetPollo.jpeg" alt="Pollo a la plancha">
+                                <div class="food-info">
+                                    <h3>Pollo a la Plancha</h3>
+                                    <p>Pollo jugoso cocinado a la plancha con guarnición.</p>
+                                    <span class="price">₡4,200</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Pollo en Salsa Parmigiana</h3>
+                                    <p>Pollo cubierto con salsa de tomate y queso gratinado.</p>
+                                    <span class="price">₡4,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Pollo en Salsa Jalapeña</h3>
+                                    <p>Pollo acompañado de una salsa cremosa con jalapeño.</p>
+                                    <span class="price">₡4,500</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Cordón Bleu de Pollo</h3>
+                                    <p>Relleno de jamón y queso, empanizado y dorado.</p>
+                                    <span class="price">₡4,800</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RES -->
+                    <button class="accordion-btn"> Res</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <article class="food-card">
+                                <img src="imagenes/churrasco.jpeg" alt="Churrasco">
+                                <div class="food-info">
+                                    <h3>Churrasco 400 g</h3>
+                                    <p>Corte premium de res a la parrilla acompañado de guarniciones.</p>
+                                    <span class="price">₡9,500</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <img src="imagenes/lomoJalapeno.jpeg" alt="Lomo jalapeño">
+                                <div class="food-info">
+                                    <h3>Lomo en Salsa Jalapeña</h3>
+                                    <p>Lomo de res bañado en salsa cremosa de jalapeño.</p>
+                                    <span class="price">₡5,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Corte Blue de Carne</h3>
+                                    <p>Jugoso corte de res preparado al estilo especial de la casa.</p>
+                                    <span class="price">₡5,200</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Lomo a la Plancha</h3>
+                                    <p>Corte de res cocinado a la plancha con sazón especial.</p>
+                                    <span class="price">₡5,200</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Lomo Stroganoff</h3>
+                                    <p>Trozos de lomo en cremosa salsa estilo Stroganoff.</p>
+                                    <span class="price">₡5,800</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CERDO -->
+                    <button class="accordion-btn"> Cerdo</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <article class="food-card">
+                                <img src="imagenes/costilla.jpeg" alt="Costilla BBQ">
+                                <div class="food-info">
+                                    <h3>Costilla de Cerdo en Salsa BBQ</h3>
+                                    <p>Costilla tierna bañada en salsa BBQ ahumada.</p>
+                                    <span class="price">₡5,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Chifrijo</h3>
+                                    <p>Mezcla tradicional de arroz, frijoles, chicharrón y pico de gallo.</p>
+                                    <span class="price">₡3,600</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- MARISCOS -->
+                    <button class="accordion-btn"> Mariscos</button>
+                    <div class="accordion-panel">
+
+                        <div class="menu-grid">
+
+                            <article class="food-card">
+                                <img src="imagenes/lomoCamarones.jpeg" alt="Lomito con camarones">
+                                <div class="food-info">
+                                    <h3>Lomito con Camarones</h3>
+                                    <p>Combinación de lomito de res y camarones salteados.</p>
+                                    <span class="price">₡7,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <img src="imagenes/camaAjillo.jpeg" alt="Camarones al ajillo">
+                                <div class="food-info">
+                                    <h3>Camarones al Ajillo</h3>
+                                    <p>Camarones salteados en mantequilla y ajo.</p>
+                                    <span class="price">₡6,500</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Camarones Empanizados</h3>
+                                    <p>Camarones crujientes empanizados y dorados.</p>
+                                    <span class="price">₡6,500</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Filete de Pescado en Salsa de Mariscos</h3>
+                                    <p>Filete de pescado fresco cubierto con salsa de mariscos.</p>
+                                    <span class="price">₡5,800</span>
+                                </div>
+                            </article>
+
+                            <article class="food-card">
+                                <div class="food-info">
+                                    <h3>Filete de Pescado al Ajillo</h3>
+                                    <p>Filete de pescado preparado con ajo y especias.</p>
+                                    <span class="price">₡4,800</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PASTAS -->
+            <div id="pastas" class="menu-content">
+
+                <h2 class="subcategoria-titulo"> Pastas</h2>
+
+                <div class="menu-grid">
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/pastaCarbonara.jpeg" alt="Pasta Carbonara">
+                        <div class="food-info">
+                            <h3>Pasta Carbonara</h3>
+                            <p>Pasta cremosa con salsa de queso, tocino y especias italianas.</p>
+                            <span class="price">₡4,800</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/pastaBolonesa.jpeg" alt="Pasta Boloñesa">
+                        <div class="food-info">
+                            <h3>Pasta Boloñesa</h3>
+                            <p>Tradicional salsa de carne con tomate sobre pasta al dente.</p>
+                            <span class="price">₡4,500</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/pastaAlfredo.jpeg" alt="Pasta Alfredo">
+                        <div class="food-info">
+                            <h3>Pasta Alfredo</h3>
+                            <p>Pasta en salsa cremosa de queso parmesano y pollo jugoso.</p>
+                            <span class="price">₡4,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Pasta con Camarones</h3>
+                            <p>Pasta salteada con camarones frescos en salsa especial del chef.</p>
+                            <span class="price">₡5,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Pasta Napolitana</h3>
+                            <p>Pasta clásica con salsa de tomate natural y hierbas aromáticas.</p>
+                            <span class="price">₡3,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Pasta Mixta</h3>
+                            <p>Combinación de carnes y vegetales en salsa especial del chef.</p>
+                            <span class="price">₡5,200</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- ARROCES -->
+            <div id="arroces" class="menu-content">
+
+                <h2 class="subcategoria-titulo"> Arroces</h2>
+
+                <p class="nota">
+                    Acompañados con papas y ensalada
+                </p>
+
+                <div class="menu-grid">
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/arrozCamarones.jpeg" alt="Arroz con camarones">
+                        <div class="food-info">
+                            <h3>Arroz con camarones</h3>
+                            <p>Arroz salteado con camarones frescos y vegetales.</p>
+                            <span class="price">₡5,200</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <img src="imagenes/arrozLomo.jpeg" alt="Arroz con lomo">
+                        <div class="food-info">
+                            <h3>Arroz con lomo</h3>
+                            <p>Arroz acompañado de jugoso lomo de res salteado con especias.</p>
+                            <span class="price">₡6,500</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADA -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Arroz de la casa</h3>
+                            <p>Especialidad de la casa con mezcla de carnes y vegetales.</p>
+                            <span class="price">₡6,500</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Arroz con carne en salsa</h3>
+                            <p>Arroz con carne en salsa casera.</p>
+                            <span class="price">₡3,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Arroz con cerdo</h3>
+                            <p>Arroz con cerdo sazonado y vegetales.</p>
+                            <span class="price">₡3,500</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Arroz cantonés</h3>
+                            <p>Arroz estilo oriental con huevo y vegetales salteados.</p>
+                            <span class="price">₡3,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Arroz con pollo</h3>
+                            <p>Clásico arroz amarillo con pollo desmenuzado y vegetales.</p>
+                            <span class="price">₡3,500</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Camarones con arroz</h3>
+                            <p>Camarones salteados servidos sobre arroz blanco.</p>
+                            <span class="price">₡6,500</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLATOS FUERTES -->
+            <div id="platos-fuertes" class="menu-content">
+
+                <h2 class="subcategoria-titulo"> Platos Fuertes</h2>
+
+                <p class="nota">
+                    Arroz, frijoles, picadillo, platano y ensalada
+                </p>
+
+                <div class="menu-grid">
+
+                    <!-- DESTACADO -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Bistec de res</h3>
+                            <p>Bistec jugoso a la plancha.</p>
+                            <span class="price">₡3,800</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADO -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Chuleta de cerdo</h3>
+                            <p>Chuleta sazonada a la plancha.</p>
+                            <span class="price">₡3,500</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADO -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Pescado frito</h3>
+                            <p>Pescado fresco frito o a la plancha.</p>
+                            <span class="price">₡3,800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Carne en salsa</h3>
+                            <p>Carne de res en salsa casera.</p>
+                            <span class="price">₡3,800</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESAYUNOS -->
+            <div id="desayunos" class="menu-content">
+
+                <h2 class="subcategoria-titulo"> Desayunos</h2>
+
+                <p class="nota">
+                    ADICIONALES: natilla, queso, plátano, salchichón
+                </p>
+
+                <div class="menu-grid">
+
+                    <!-- DESTACADO -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Pinto con huevos picados o fritos</h3>
+                            <p>Clásico desayuno costarricense con huevos al gusto.</p>
+                            <span class="price">₡2.500</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADO -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Pinto con huevo y tomate</h3>
+                            <p>Gallo pinto acompañado de huevo revuelto con tomate fresco.</p>
+                            <span class="price">₡2.800</span>
+                        </div>
+                    </article>
+
+                    <!-- DESTACADO -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Pinto con huevo y tocineta</h3>
+                            <p>Desayuno completo con tocineta crujiente y huevos al gusto.</p>
+                            <span class="price">₡2.800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Pinto con huevos y jamón</h3>
+                            <p>Gallo pinto acompañado de huevos y jamón dorado.</p>
+                            <span class="price">₡2.800</span>
+                        </div>
+                    </article>
+
+                    <!-- NORMAL -->
+                    <article class="food-card">
+                        <div class="food-info">
+                            <h3>Pinto con carne en salsa</h3>
+                            <p>Desayuno fuerte con carne en salsa casera y gallo pinto.</p>
+                            <span class="price">₡3.000</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+    </section>
+
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="gallery">
+
+        <div class="container">
+
+            <h2>Galería</h2>
+
+            <div class="gallery-grid">
+
+                <img src="imagenes/2quesadillas.jpeg" alt="">
+                <img src="imagenes/arrozCama.jpeg" alt="">
+                <img src="imagenes/camarones.jpeg" alt="">
+                <img src="imagenes/hamburguesaCama.jpeg" alt="">
+                <img src="imagenes/hamburguesaJalapeno.jpeg" alt="">
+                <img src="imagenes/lomo.jpeg" alt="">
+                <img src="imagenes/nachosCarne.jpeg" alt="">
+                <img src="imagenes/empBirria.jpeg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- HORARIOS -->
+    <section class="schedule">
+
+        <div class="container">
+
+            <h2>Horarios</h2>
+
+            <div class="schedule-box">
+                <p><strong>Lunes - Domingo:</strong> 11:00 AM - 11:00 PM</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+
+        <div class="container">
+
+            <h2>Contacto y Ubicación</h2>
+
+            <div class="contact-grid">
+
+                <div class="info">
+
+                    <p>Realizamos cotizaciones para eventos.</p>
+
+                    <p>📞 +506 8811-8243</p>
+
+                    <p>
+                        📍 650m norte de la Carcel de La Marina, San Carlos
+                    </p>
+
+
+                    <div class="socials">
+
+                        <a href="https://www.facebook.com/share/1CwPTSAucW/?mibextid=wwXIfr" target="_blank">
+                            Facebook
+                        </a>
+
+                        <a href="https://www.instagram.com/laventana.delpueblo?igsh=YXpzYzg1cDF4Z2Zv" target="_blank">
+                            Instagram
+                        </a>
+
+                        <a href="https://wa.me/50688118243">
+                            Whatsapp
+                        </a>
+
+                    </div>
+
+                    <a href="https://waze.com/ul/hd1ggpvd1g" class="btn">
+                        Cómo llegar
+                    </a>
+
+                </div>
+
+                <div class="map">
+
+                    <iframe src="https://maps.google.com/maps?q=10.4015795,-84.3831909&z=18&output=embed"
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 La Ventana Del Pueblo - Todos los derechos reservados
+        </p>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

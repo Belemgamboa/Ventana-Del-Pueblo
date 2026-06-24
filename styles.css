@@ -1,0 +1,572 @@
+:root{
+    --naranja:#F57C00;
+    --naranja-oscuro:#E66A00;
+    --crema:#FFF8E8;
+    --beige:#F5E8C7;
+    --marron:#8D5A2B;
+    --blanco:#FFFFFF;
+    --gris:#666666;
+    --sombra:rgba(0,0,0,.12);
+    --font-size-base:16px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    font-size:var(--font-size-base);
+    background:var(--crema);
+    color:#333;
+    margin:0;
+    padding-top:80px;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.logo img{
+    height:70px;
+    width:auto;
+    display:block;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--marron);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--naranja);
+}
+
+.menu-btn{
+    display:none;
+    border:none;
+    background:none;
+    font-size:2rem;
+    color:var(--naranja);
+    cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:10vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(245,124,0,.30)
+        ),
+        url("imagenes/hamburguesaJalapeno.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    color:white;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn{
+    display:inline-block;
+    background:var(--naranja);
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:var(--naranja-oscuro);
+    transform:translateY(-3px);
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+section{
+    padding:90px 0;
+}
+
+h2{
+    text-align:center;
+    color:var(--naranja);
+    margin-bottom:40px;
+    font-size:2.2rem;
+}
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.about{
+    background:var(--beige);
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:1.05rem;
+}
+
+/* =========================
+   MENÚ
+========================= */
+
+.menu-section{
+    background:var(--crema);
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border-top:5px solid var(--naranja);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:var(--marron);
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.card p{
+    margin:8px 0;
+}
+
+.card span{
+    color:var(--naranja);
+    font-weight:bold;
+    display:block;
+    margin-bottom:10px;
+}
+
+/* =========================
+   MENÚ POR CATEGORÍAS
+========================= */
+
+.menu-categorias{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.categoria-btn{
+    background:var(--naranja);
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.categoria-btn:hover{
+    background:var(--naranja-oscuro);
+}
+
+.categoria-btn.active{
+    background:var(--marron);
+}
+
+.menu-content{
+    display:none;
+}
+
+.active-menu{
+    display:block;
+}
+
+.menu-content .card{
+    max-width:700px;
+    margin:auto;
+}
+
+/* =========================
+   TARJETAS DE PLATILLOS
+========================= */
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin-top:20px;
+}
+
+.accordion{
+    max-width:900px;
+    margin: auto;
+}
+
+.accordion-btn{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    background:var(--naranja);
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:1.1rem;
+    font-weight:600;
+    cursor:pointer;
+    text-align:left;
+    transition:.3s;
+}
+
+.accordion-btn:hover{
+    background:var(--naranja-oscuro);
+}
+
+.accordion-panel{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.food-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s ease;
+}
+
+.food-card:hover{
+    transform:translateY(-8px);
+}
+
+.food-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.food-info{
+    padding:20px;
+}
+
+.food-info h3{
+    color:var(--marron);
+    margin-bottom:10px;
+}
+
+.food-info p{
+    color:var(--gris);
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.price{
+    display:block;
+    font-size:1.2rem;
+    font-weight:bold;
+    color:var(--naranja);
+}
+/* =========================
+   GALERÍA
+========================= */
+
+.gallery{
+    background:white;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.04);
+}
+
+/* =========================
+   HORARIOS
+========================= */
+
+.schedule{
+    background:var(--beige);
+}
+
+.schedule-box{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border-left:6px solid var(--naranja);
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact{
+    background:var(--crema);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.info p{
+    font-size:1.05rem;
+}
+
+.socials{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.socials a{
+    text-decoration:none;
+    background:var(--naranja);
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+    transition:.3s;
+}
+
+.socials a:hover{
+    background:var(--naranja-oscuro);
+}
+
+.map iframe{
+    width:100%;
+    height:350px;
+    border:none;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:var(--marron);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:white;
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+        box-shadow:0 5px 15px rgba(0,0,0,.1);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    h2{
+        font-size:1.8rem;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .socials{
+        justify-content:center;
+    }
+
+    .logo img{
+        height:55px;
+    }
+
+    .menu-categorias{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .categoria-btn{
+        width:90%;
+        max-width:350px;
+    }
+
+    .menu-grid{
+    grid-template-columns:1fr;
+    }
+
+    .food-card img{
+    height:200px;
+    }
+}
+
+.accesibilidad{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.access-btn{
+    border:none;
+    background:var(--naranja);
+    color:white;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.access-btn:hover{
+    background:var(--naranja-oscuro);
+}
+
+body.dark-mode{
+    background:#121212;
+    color:#f5f5f5;
+}
+
+body.dark-mode .navbar{
+    background:#1e1e1e;
+}
+
+body.dark-mode .food-card,
+body.dark-mode .schedule-box{
+    background:#252525;
+    color:white;
+}
+
+body.dark-mode .gallery{
+    background:#1a1a1a;
+}
+
+body.dark-mode .about,
+body.dark-mode .schedule{
+    background:#202020;
+}
+
+body.dark-mode footer{
+    background:#000;
+}
